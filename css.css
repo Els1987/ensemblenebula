@@ -509,6 +509,9 @@ opacity: 0.7;
     
 }
 
+#lijst{
+    white-space:pre-line;
+}
 
 .gridcontainervideo{
     display: grid;
