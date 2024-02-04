@@ -14,6 +14,7 @@ const cursor3 = document.getElementById("cursor3");
 const cursor4 = document.getElementById("cursor4");
 const cursor5 = document.getElementById("cursor5");
 
+/*
 let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
 let arrayseconds = ["210","220","200","190","195"];
 let seconds = "";
@@ -25,7 +26,7 @@ let stereffect="";
 //sterren
 
 
-/*
+
 function sterren(){
     arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
     seconds = arrayseconds.pop();
@@ -62,7 +63,7 @@ setInterval(sterren
 let planeet = document.getElementsByClassName("planeet");
 
 
-let screensize = screen.width
+//let screensize = screen.width
 
 
 
