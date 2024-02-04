@@ -72,35 +72,35 @@ for(var i=0;i<planeet.length;i++)
 
 
 
-for(var i=0;i<planeet.length;i++)
-planeet[i].addEventListener('mouseout', removemenutitle);
+//for(var i=0;i<planeet.length;i++)
+//planeet[i].addEventListener('mouseout', removemenutitle);
 
 
 function showmenutitle(event){
     switch(event.target.id){
         case "profiel":
-            clearInterval(myInterval);
+            //clearInterval(myInterval);
         profiel.style.cursor = "url('./imgnebula/cursorzwart1.png'), auto"; 
      
         break;
 
         case "agenda":
-            clearInterval(myInterval);
+           // clearInterval(myInterval);
             agenda.style.cursor = "url('./imgnebula/cursorzwart2.png'), auto";
         break;
 
         case "video":
-            clearInterval(myInterval);
+           // clearInterval(myInterval);
             video.style.cursor = "url('./imgnebula/cursorzwart3.png'), auto";
         break;
 
         case "foto":
-            clearInterval(myInterval);
+           // clearInterval(myInterval);
         foto.style.cursor = "url('./imgnebula/cursorzwart4.png'), auto";
         break;
 
         case "muziek":
-            clearInterval(myInterval);
+           // clearInterval(myInterval);
             muziek.style.cursor = "url('./imgnebula/cursorzwart5.png'), auto";
         break;
 
@@ -111,18 +111,18 @@ function showmenutitle(event){
 };
 
 
-
+/*
 function removemenutitle(event){
     switch(event.target.id){
         case "profiel":
         myInterval= 
         setInterval(sterren
-        , 350)
+       , 350)
         break;
 
         case "agenda":
     
-        myInterval= 
+      myInterval= 
 setInterval(sterren
 , 350)
         break;
@@ -153,3 +153,4 @@ setInterval(sterren
 
     }
 };
+*/
