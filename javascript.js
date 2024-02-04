@@ -25,13 +25,13 @@ let stereffect="";
 //sterren
 
 
-
+/*
 function sterren(){
     arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
     seconds = arrayseconds.pop();
 
     if(arraysterren == ""){
-    arraysterren = [ster[0],ster[1],/*ster[2],ster[3],*/ ster[4], /*ster[5]*/];
+    arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
 console.log(arraysterren);
     arraysterren = arraysterren.sort(() => Math.random()-0.5);
     console.log(arraysterren);
@@ -55,7 +55,7 @@ console.log(arraysterren);
 let myInterval= 
 setInterval(sterren
 , 1000)
-
+*/
 
 //menu tekst cursor
 
