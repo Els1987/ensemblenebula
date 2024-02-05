@@ -506,7 +506,7 @@ opacity: 0.7;
          }
 
          .tekst{
-            word-break: break-word;
+            word-break: break-word !important;
          }
 
     }
