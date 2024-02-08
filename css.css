@@ -486,8 +486,7 @@ opacity: 0.7;
     grid-template-rows: 50px auto;
     background-image: url("./imgnebula/achtergrond1.png");
     background-size: cover;
-    min-height: 100vh;
-    padding-block-end: 50px;
+    min-height: 97.5vh;
 }
 
 
@@ -499,6 +498,7 @@ opacity: 0.7;
         .gridcontainervideo, .gridcontaineragenda, .gridcontainerfoto, .gridcontainermuziek, .gridcontainerprofiel{
             grid-template-rows: 20px auto;
             grid-template-columns: 20px auto 20px;
+            padding-block-end: 20px;
         }
         .video, .muziek{
             width: 100%;
@@ -514,12 +514,14 @@ opacity: 0.7;
 @media screen and (min-width:500px) and (max-width:800px) {
     .gridcontaineragenda, .gridcontainerfoto, .gridcontainerprofiel{
         grid-template-columns: 100px auto 100px;
+        padding-block-end: 50px;
     }
 
   
         .gridcontainervideo, .gridcontainermuziek {
             grid-template-rows: 50px auto;
             grid-template-columns: 100px auto auto 100px;
+            padding-block-end: 50px;
         }   
     iframe{
         width: 100%;
@@ -532,11 +534,13 @@ opacity: 0.7;
 @media screen and (min-width:800px) {
      .gridcontaineragenda, .gridcontainerfoto, .gridcontainerprofiel{
         grid-template-columns: 100px auto 100px;
+        padding-block-end: 50px;
     }
 
   
         .gridcontainervideo, .gridcontainermuziek {
             grid-template-columns: 100px auto auto 100px;
+            padding-block-end: 50px;
         }
 
     iframe{
