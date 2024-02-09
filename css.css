@@ -530,6 +530,7 @@ opacity: 0.7;
 
          .tekst{
             word-wrap: break-word !important;
+             font-size: 0.9em;
          }
 
     }
