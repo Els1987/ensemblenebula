@@ -536,7 +536,7 @@ opacity: 0.7;
 
 @media screen and (min-width:500px) and (max-width:800px) {
     .gridcontaineragenda, .gridcontainerfoto, .gridcontainerprofiel{
-        grid-template-columns: 100px auto 100px;
+        grid-template-columns: 50px auto 50px;
         padding-block-end: 50px;
     }
 
@@ -667,9 +667,9 @@ iframe {
     color: black;
     background-color: hsla(0, 0%, 100%, 0.4);
     opacity: 0.8;
-    white-space:normal !important;
+   /* white-space:normal !important;*/
     word-wrap: break-word !important;
-    word-break: keep-all;
+   word-break: keep-all;
 }
 
 .tekst a {
@@ -696,4 +696,3 @@ iframe {
     50% { opacity: 1; }
     100% { opacity: 0; }
   }
-
