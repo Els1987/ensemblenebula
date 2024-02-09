@@ -492,7 +492,7 @@
 
 .planeet img{
     opacity: 0.9;
- 
+    z-index: 300; 
 }
 
 .planeet img:hover {
