@@ -25,9 +25,6 @@
         max-height: 40%;
     }
 
-    h1 {
-        font-size: 2em;
-    }
 
 
     #profiellink{
@@ -669,9 +666,9 @@ iframe {
     color: black;
     background-color: hsla(0, 0%, 100%, 0.4);
     opacity: 0.8;
-    white-space:normal;
+    white-space:normal !important;
     word-wrap: break-word !important;
-    word-break: keep-all !important;
+    word-break: keep-all;
 }
 
 .tekst a {
