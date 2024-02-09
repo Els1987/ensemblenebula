@@ -84,7 +84,6 @@
 
     .ster {
         display: none;
-        z-index: 50; 
         position: absolute;
         
     }
@@ -320,7 +319,6 @@
 
     .ster {
         display: none;
-        z-index: 50;
         position: absolute;
     }
     
@@ -434,7 +432,6 @@
 
 .ster {
     display: none;
-    z-index: 200;
     position: absolute;
 }
 #ster1 {
