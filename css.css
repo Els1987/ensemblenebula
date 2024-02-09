@@ -667,7 +667,7 @@ iframe {
     background-color: hsla(0, 0%, 100%, 0.4);
     opacity: 0.8;
     white-space:normal;
-    word-break: break-all;
+    word-break: break-all !important;
 }
 
 .tekst a {
