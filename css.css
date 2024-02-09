@@ -524,7 +524,8 @@ opacity: 0.7;
             grid-template-rows: 20px auto;
             grid-template-columns: 20px auto 20px;
             padding-block-end: 20px;
-            width: 100vw;
+            overflow: normal;
+            
         }
         .video, .muziek{
             width: 100%;
