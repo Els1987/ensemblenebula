@@ -493,7 +493,6 @@
 .planeet img{
     opacity: 1;
     z-index: 300; 
-    position: absolute;
 }
 
 .planeet img:hover {
