@@ -54,10 +54,6 @@ function sterren(){
 
 let myInterval= setInterval(sterren, 700);
 
-if(screensize < 500){
-    myInterval=""}
-
-
 
 //menu tekst cursor
 
@@ -147,3 +143,7 @@ setInterval(sterren
 
     }
 };
+
+
+if(screensize < 500){
+    myInterval=""}
