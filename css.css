@@ -681,6 +681,7 @@ iframe {
 /*animatie sterren fadein*/
 .ster{
     opacity: 1;
+    overflow: hidden;
 }
 
 #ster1, #ster2, #ster3, #ster4, #ster5, #ster6 {
