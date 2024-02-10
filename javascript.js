@@ -146,4 +146,5 @@ setInterval(sterren
 
 
 if(screensize < 500){
-    myInterval=""}
+clearInterval(myInterval);
+}
