@@ -20,14 +20,14 @@ let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
 //let seconds = "";
 
 let stereffect="";
-let myInterval= "";
+
 
 
 //sterren
 
 
 
-myInterval= setInterval(sterren, 700);
+let myInterval= setInterval(sterren, 700);
     
 function shuffle(){
     for(let i = 0; i < arraysterren.length; i++){
