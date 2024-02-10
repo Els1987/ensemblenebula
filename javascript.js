@@ -14,9 +14,10 @@ const cursor3 = document.getElementById("cursor3");
 const cursor4 = document.getElementById("cursor4");
 const cursor5 = document.getElementById("cursor5");
 
+let screensize = screen.width;
 let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
-let arrayseconds = ["510","520","570","590","595"];
-let seconds = "";
+//let arrayseconds = ["510","520","570","590","595"];
+//let seconds = "";
 
 let stereffect="";
 
@@ -32,36 +33,30 @@ function shuffle(){
     }
     }
 
-
 function sterren(){
-    arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
-    seconds = arrayseconds.pop();
+    //arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
+    //seconds = arrayseconds.pop();
     arraysterren = [ster[0],ster[1],ster[2],ster[3],ster[4], ster[5]];
     shuffle();
-    console.log(arraysterren);
+    //console.log(arraysterren);
     stereffect = arraysterren.pop();
-    console.log(stereffect);
+    //console.log(stereffect);
 
     stereffect.style.display = "block";
     setTimeout(
     function stop(){stereffect.style.display = "none"}, 500)
 }
 
-
-
-let myInterval= 
-setInterval(sterren
-, 700)
-
+if(screensize > 500){
+    let myInterval= setInterval(sterren, 700)
+    }
+else{}
 
 
 
 //menu tekst cursor
 
 let planeet = document.getElementsByClassName("planeet");
-
-
-let screensize = screen.width
 
 
 
