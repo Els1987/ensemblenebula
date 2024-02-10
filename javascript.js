@@ -24,6 +24,9 @@ let stereffect="";
 
 
 //sterren
+if(screensize > 500){
+    let myInterval= setInterval(sterren, 700);
+    
 function shuffle(){
     for(let i = 0; i < arraysterren.length; i++){
     let t = arraysterren[i];
@@ -46,11 +49,9 @@ function sterren(){
     setTimeout(
     function stop(){stereffect.style.display = "none"}, 500)
 }
-
-if(screensize > 500){
-    let myInterval= setInterval(sterren, 700)
-    }
+}
 else{}
+
 
 
 
