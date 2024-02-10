@@ -20,12 +20,12 @@ let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
 //let seconds = "";
 
 let stereffect="";
-
+let myInterval= "";
 
 
 //sterren
 if(screensize > 500){
-    let myInterval= setInterval(sterren, 700);
+    myInterval= setInterval(sterren, 700);
     
 function shuffle(){
     for(let i = 0; i < arraysterren.length; i++){
@@ -59,17 +59,12 @@ else{}
 
 let planeet = document.getElementsByClassName("planeet");
 
-
-
 for(var i=0;i<planeet.length;i++)
     planeet[i].addEventListener('mouseover', showmenutitle);
 
 
-
-
 for(var i=0;i<planeet.length;i++)
 planeet[i].addEventListener('mouseout', removemenutitle);
-
 
 function showmenutitle(event){
     switch(event.target.id){
