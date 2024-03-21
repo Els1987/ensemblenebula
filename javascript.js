@@ -49,7 +49,9 @@ function sterren(){
 
     stereffect.style.display = "block";
     setTimeout(
-    function stop(){stereffect.style.display = "none"}, 500)
+    function stop(){stereffect.style.display = "none"}, 500);
+    
+    checksize();
 }
 
 let myInterval= setInterval(sterren, 700);
@@ -144,7 +146,8 @@ setInterval(sterren
     }
 };
 
-
+function checksize(){
 if(screensize < 500){
 clearInterval(myInterval);
+}
 }
