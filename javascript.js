@@ -26,7 +26,11 @@ let stereffect="";
 //sterren
 
 
-
+function checksize(){
+if(screensize < 500){
+clearInterval(myInterval);
+}
+}
 
     
 function shuffle(){
@@ -146,8 +150,4 @@ setInterval(sterren
     }
 };
 
-function checksize(){
-if(screensize < 500){
-clearInterval(myInterval);
-}
-}
+
