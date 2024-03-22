@@ -29,7 +29,7 @@ titel.addEventListener("click", muziekplay);
 
 function muziekplay(){
     titel.style.cursor = "pointer"
-    speelmuziek= new Audio("./return.mp3");
+    speelmuziek= new Audio("./Return.mp3");
     speelmuziek.play();
     titel.removeEventListener("click", muziekplay);
     timeout=setTimeout(stop, 6800);
