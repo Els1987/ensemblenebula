@@ -23,7 +23,7 @@ let speelmuziek="";
 let timeout=""
 
 let titel = document.getElementById("titel");
-titel.addEventListener("mouseover", muziekplay);
+titel.addEventListener("click", muziekplay);
 
 
 
@@ -31,13 +31,13 @@ function muziekplay(){
     titel.style.cursor = "pointer"
     speelmuziek= new Audio("./return.mp3");
     speelmuziek.play();
-    titel.removeEventListener("mouseover", muziekplay);
+    titel.removeEventListener("click", muziekplay);
     timeout=setTimeout(stop, 6800);
 }
 
 function stop(){
 speelmuziek.pause();
-titel.addEventListener("mouseover", muziekplay);
+titel.addEventListener("click", muziekplay);
 }
 
 //sterren
