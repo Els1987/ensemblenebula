@@ -16,12 +16,29 @@ const cursor5 = document.getElementById("cursor5");
 
 let screensize = screen.width;
 let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
-//let arrayseconds = ["510","520","570","590","595"];
-//let seconds = "";
-
 let stereffect="";
 
+//muziek
+let speelmuziek="";
+let timeout=""
 
+let titel = document.getElementById("titel");
+titel.addEventListener("mouseover", muziekplay);
+
+
+
+function muziekplay(){
+    titel.style.cursor = "pointer"
+    speelmuziek= new Audio("./return.mp3");
+    speelmuziek.play();
+    titel.removeEventListener("mouseover", muziekplay);
+    timeout=setTimeout(stop, 6800);
+}
+
+function stop(){
+speelmuziek.pause();
+titel.addEventListener("mouseover", muziekplay);
+}
 
 //sterren
 
