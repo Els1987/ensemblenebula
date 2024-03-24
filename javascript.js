@@ -83,7 +83,7 @@ clearInterval(myInterval);
 }
 }
 
-onload.function(){checksize()};
+window.addEventListener("load", checksize);
 
 //menu tekst cursor
 
