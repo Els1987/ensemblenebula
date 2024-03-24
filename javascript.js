@@ -45,13 +45,8 @@ titel.style.cursor = "pointer";
 
 //sterren
 
-onload.checksize();
 
-function checksize(){
-if(screensize < 500){
-clearInterval(myInterval);
-}
-}
+
 
 
     
@@ -80,6 +75,15 @@ function sterren(){
 
 let myInterval= setInterval(sterren, 700);
 
+//check screen size!
+
+function checksize(){
+if(screensize < 500){
+clearInterval(myInterval);
+}
+}
+
+onload.checksize();
 
 //menu tekst cursor
 
