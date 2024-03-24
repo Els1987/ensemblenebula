@@ -193,8 +193,6 @@
     
     
     .footer {
-        grid-row: 5/6;
-        grid-column: 1/6;
         font-size: 1.3em;
     }
     
@@ -307,8 +305,6 @@
     
     
     .footer {
-        grid-row: 5/6;
-        grid-column: 2/5;
         font-size: 1.3em;
     }
     
@@ -420,8 +416,6 @@
 
 
 .footer {
-    grid-row: 4/5;
-    grid-column: 2/5;
     font-size: 1.4em;
 }
 
@@ -473,11 +467,11 @@
 
 
 .footer {
-    display: flex;
+    position: fixed;
+    bottom: 0;
+    margin-inline: auto;
     color:black ;
-    text-align: center;
     justify-self: center;
-    align-items: flex-end;
 }
 
 .footer a {
