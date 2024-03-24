@@ -45,12 +45,14 @@ titel.style.cursor = "pointer";
 
 //sterren
 
+onload.checksize();
 
 function checksize(){
 if(screensize < 500){
 clearInterval(myInterval);
 }
 }
+
 
     
 function shuffle(){
@@ -74,8 +76,6 @@ function sterren(){
     stereffect.style.display = "block";
     setTimeout(
     function stop(){stereffect.style.display = "none"}, 500);
-    
-    checksize();
 }
 
 let myInterval= setInterval(sterren, 700);
