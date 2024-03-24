@@ -18,18 +18,20 @@ let screensize = screen.width;
 let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
 let stereffect="";
 
-//muziek
+
+//muziek 
 let speelmuziek="";
 let timeout=""
 
 let titel = document.getElementById("titel");
 titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
 
 
 
 function muziekplay(){
-    titel.style.cursor = "pointer"
-    speelmuziek= new Audio("./Return.mp3");
+    titel.style.cursor = "default";
+    speelmuziek= new Audio("./return.mp3");
     speelmuziek.play();
     titel.removeEventListener("click", muziekplay);
     timeout=setTimeout(stop, 6800);
@@ -38,6 +40,7 @@ function muziekplay(){
 function stop(){
 speelmuziek.pause();
 titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
 }
 
 //sterren
