@@ -474,6 +474,7 @@
     height: 5%;
     transform: translate(-50%, -50%);
     white-space: nowrap;
+    margin-block-end: 5px;
 }
 
 .footer a {
