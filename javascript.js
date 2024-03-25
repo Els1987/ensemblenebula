@@ -33,7 +33,7 @@ titel.style.cursor = "pointer";
 
 function muziekplay(){
     titel.style.cursor = "default";
-    speelmuziek= new Audio("./return.mp3");
+    speelmuziek= new Audio("./Return.mp3");
     speelmuziek.play();
     titel.removeEventListener("click", muziekplay);
     timeout=setTimeout(stop, 6800);
