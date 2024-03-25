@@ -23,7 +23,7 @@ let stereffect="";
 let speelmuziek="";
 let timeout=""
 
-let titel = document.getElementById("achtergrond");
+let titel = document.getElementById("titel");
 titel.addEventListener("click", muziekplay);
 titel.style.cursor = "pointer";
 
