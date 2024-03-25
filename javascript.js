@@ -24,6 +24,8 @@ let speelmuziek="";
 let timeout=""
 
 let titel = document.getElementById("titel");
+
+
 titel.addEventListener("click", muziekplay);
 titel.style.cursor = "pointer";
 
@@ -42,6 +44,7 @@ speelmuziek.pause();
 titel.addEventListener("click", muziekplay);
 titel.style.cursor = "pointer";
 }
+
 
 //sterren
 
