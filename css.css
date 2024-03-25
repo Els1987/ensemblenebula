@@ -469,9 +469,11 @@
 .footer {
     position: fixed;
     bottom: 0;
-    margin-inline: auto;
     color:black ;
-    justify-self: center;
+    left: 50%;
+    height: 5%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
 }
 
 .footer a {
