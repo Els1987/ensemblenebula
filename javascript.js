@@ -23,9 +23,8 @@ let stereffect="";
 let speelmuziek="";
 let timeout=""
 
-let titel = document.getElementById("titel");
+let titel = document.getElementById("achtergrond");
 titel.addEventListener("click", muziekplay);
-titel.addEventListener("touchstart", muziekplay);
 titel.style.cursor = "pointer";
 
 
@@ -35,14 +34,12 @@ function muziekplay(){
     speelmuziek= new Audio("./return.mp3");
     speelmuziek.play();
     titel.removeEventListener("click", muziekplay);
-    titel.removeEventListener("touchstart", muziekplay);
     timeout=setTimeout(stop, 6800);
 }
 
 function stop(){
 speelmuziek.pause();
 titel.addEventListener("click", muziekplay);
-titel.removeEventListener("touchstart", muziekplay);
 titel.style.cursor = "pointer";
 }
 
