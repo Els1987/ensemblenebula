@@ -6,53 +6,38 @@ let video = document.getElementById("videolink");
 let foto = document.getElementById("fotolink");
 let muziek = document.getElementById("muzieklink");
 
-
 let ster = document.getElementsByClassName("ster");
-const cursor1 = document.getElementById("cursor1");
-const cursor2 = document.getElementById("cursor2");
-const cursor3 = document.getElementById("cursor3");
-const cursor4 = document.getElementById("cursor4");
-const cursor5 = document.getElementById("cursor5");
-
-let screensize = screen.width;
+let planeet = document.getElementsByClassName("planeet");
 let arraysterren = [ster[0],ster[1],ster[2],ster[3], ster[4], ster[5]];
+let arrayseconds = ["510","520","570","590","595"];
+let seconds = "";
+
 let stereffect="";
+let screensize = screen.width;
+let myInterval= "";
 
+//schermgrootte
+window.addEventListener("load", checksize);
 
-//muziek 
-let speelmuziek="";
-let timeout=""
-
-let titel = document.getElementById("titel");
-
-
-titel.addEventListener("click", muziekplay);
-titel.style.cursor = "pointer";
-
-
-
-function muziekplay(){
-    titel.style.cursor = "default";
-    speelmuziek= new Audio("./Return.mp3");
-    speelmuziek.play();
-    titel.removeEventListener("click", muziekplay);
-    timeout=setTimeout(stop, 6800);
+function checksize(){
+    if(screensize < 700){
+     
 }
+else{
+    shuffle();
+    sterren();
+    myInterval= setInterval(sterren
+    , 700);
 
-function stop(){
-speelmuziek.pause();
-titel.addEventListener("click", muziekplay);
-titel.style.cursor = "pointer";
+    for(var i=0;i<planeet.length;i++)
+    planeet[i].addEventListener('mouseover', showmenutitle);
+
+    for(var i=0;i<planeet.length;i++)
+    planeet[i].addEventListener('mouseout', removemenutitle);
 }
-
+}
 
 //sterren
-
-
-
-
-
-    
 function shuffle(){
     for(let i = 0; i < arraysterren.length; i++){
     let t = arraysterren[i];
@@ -60,44 +45,25 @@ function shuffle(){
     arraysterren[i] = arraysterren[r];
     arraysterren[r] = t;
     }
-}
+    }
+
 
 function sterren(){
-    //arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
-    //seconds = arrayseconds.pop();
+    arrayseconds = arrayseconds.sort(() => Math.random()-0.5);
+    seconds = arrayseconds.pop();
     arraysterren = [ster[0],ster[1],ster[2],ster[3],ster[4], ster[5]];
     shuffle();
-    //console.log(arraysterren);
+    console.log(arraysterren);
     stereffect = arraysterren.pop();
-    //console.log(stereffect);
+    console.log(stereffect);
 
     stereffect.style.display = "block";
     setTimeout(
-    function stop(){stereffect.style.display = "none"}, 500);
+    function stop(){stereffect.style.display = "none"}, 500)
 }
 
-let myInterval= setInterval(sterren, 700);
-
-//check screen size!
-
-function checksize(){
-if(screensize < 700){
-clearInterval(myInterval);
-}
-}
-
-window.addEventListener("load", checksize);
-
+    
 //menu tekst cursor
-
-let planeet = document.getElementsByClassName("planeet");
-
-for(var i=0;i<planeet.length;i++)
-    planeet[i].addEventListener('mouseover', showmenutitle);
-
-
-for(var i=0;i<planeet.length;i++)
-planeet[i].addEventListener('mouseout', removemenutitle);
 
 function showmenutitle(event){
     switch(event.target.id){
@@ -177,4 +143,30 @@ setInterval(sterren
     }
 };
 
+//muziek 
+let speelmuziek="";
+let timeout=""
 
+let titel = document.getElementById("titel");
+
+
+titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
+
+
+
+function muziekplay(){
+    titel.style.cursor = "default";
+    speelmuziek= new Audio("./return.mp3");
+    speelmuziek.play();
+    titel.removeEventListener("click", muziekplay);
+    timeout=setTimeout(stop, 6800);
+}
+
+function stop(){
+speelmuziek.pause();
+titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
+}
+    
+    
