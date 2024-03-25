@@ -78,7 +78,7 @@ let myInterval= setInterval(sterren, 700);
 //check screen size!
 
 function checksize(){
-if(screensize < 500){
+if(screensize < 700){
 clearInterval(myInterval);
 }
 }
