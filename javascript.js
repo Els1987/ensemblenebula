@@ -16,6 +16,33 @@ let stereffect="";
 let screensize = screen.width;
 let myInterval= "";
 
+//muziek 
+let speelmuziek="";
+let timeout=""
+
+let titel = document.getElementById("titel");
+
+
+titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
+
+
+
+function muziekplay(){
+    titel.style.cursor = "default";
+    speelmuziek= new Audio("./return.mp3");
+    speelmuziek.play();
+    titel.removeEventListener("click", muziekplay);
+    timeout=setTimeout(stop, 6800);
+}
+
+function stop(){
+speelmuziek.pause();
+titel.addEventListener("click", muziekplay);
+titel.style.cursor = "pointer";
+}
+    
+
 //schermgrootte
 window.addEventListener("load", checksize);
 
@@ -143,30 +170,5 @@ setInterval(sterren
     }
 };
 
-//muziek 
-let speelmuziek="";
-let timeout=""
 
-let titel = document.getElementById("titel");
-
-
-titel.addEventListener("click", muziekplay);
-titel.style.cursor = "pointer";
-
-
-
-function muziekplay(){
-    titel.style.cursor = "default";
-    speelmuziek= new Audio("./return.mp3");
-    speelmuziek.play();
-    titel.removeEventListener("click", muziekplay);
-    timeout=setTimeout(stop, 6800);
-}
-
-function stop(){
-speelmuziek.pause();
-titel.addEventListener("click", muziekplay);
-titel.style.cursor = "pointer";
-}
-    
     
